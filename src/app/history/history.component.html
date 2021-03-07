@@ -1,0 +1,9 @@
+<h3 class="mt-2" style="text-align: center">Upload History</h3>
+<div class="files m-3">
+  <ul *ngFor="let item of fileArray">
+    <li>{{ item }}</li>
+  </ul>
+  <div class="d-flex" *ngIf="resetFlag">
+    <button class="btn btn-primary" (click)="Reset()">Reset</button>
+  </div>
+</div>
